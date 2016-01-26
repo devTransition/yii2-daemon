@@ -1,0 +1,40 @@
+{
+    "name": "devtransition/yii2-daemon",
+    "description": "Yii 2 daemon manager (threaded)",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2",
+        "extension",
+        "daemon",
+        "background"
+    ],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Nicolas Wild",
+            "email": "nwild79@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "yiisoft/yii2": "*",
+        "ext-pcntl": "*",
+        "ext-posix": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "devtransition\\daemon\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "devtransition\\daemon\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
